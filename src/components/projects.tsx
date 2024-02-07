@@ -3,7 +3,7 @@ export default function CodingProjects() {
         <>
         <h2 className="text-center text-4xl my-8 select-none mt-16">Coding Projects</h2>
         { codingProjects.map(({ title, description, technologies, link, image, direction }, index) => (
-            <section className={`flex flex-col items-center ${direction} p-4 select-none`}>
+            <section key={index} className={`flex flex-col items-center ${direction} p-4 select-none`}>
                 <a href={link} target="_blank" rel="noreferrer" className="flex justify-center items-center w-full md:w-[50%]">
                     <img src={image} className="w-full px-3 lg:w-[75%]" alt=""/>
                 </a>

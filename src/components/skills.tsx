@@ -1,3 +1,7 @@
+'use client'
+
+import { motion } from 'framer-motion'
+ 
 export default function Skills() {
     return (
         <>
@@ -5,9 +9,17 @@ export default function Skills() {
         <div className="flex justify-center select-none">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-12 max-w-[1000px] place-items-center place-content-center">
                 { technologies.map(({technology, color, shadow}, index) => (
-                    <div key={index} className={`${color} h-[75px] w-[150px] flex justify-center items-center rounded-lg shadow-xl ${shadow}`}>
+                    <motion.li
+                        key={index}
+                        variants={fadeInAnimationVariants}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true }}
+                        custom={index}
+                        className={`${color} h-[75px] w-[150px] flex justify-center items-center rounded-lg shadow-xl ${shadow}`}
+                    >
                         <p className="text-white text-2xl">{technology}</p>
-                    </div>
+                    </motion.li>
                 )) }
             </div>
         </div>
@@ -96,3 +108,17 @@ const technologies:ITechnologies[] = [{
     color: 'bg-gray-900',
     shadow: 'shadow-gray-900/50'
 }]
+
+const fadeInAnimationVariants = {
+    initial: {
+        opacity: 0,
+        y: 100
+    },
+    animate: (index: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: 0.05 * index
+        }
+    })
+}

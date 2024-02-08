@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection"
-import CodingProjects from "@/components/projects"
 import Skills from "@/components/skills"
+import CodingProjects from "@/components/projects"
+import Experiences from "@/components/Experiences"
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
     <HeroSection />
     <Skills />
     <CodingProjects />
+    <Experiences />
     </>
   )
 }

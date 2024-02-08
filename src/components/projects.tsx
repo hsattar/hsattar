@@ -10,7 +10,6 @@ export default function CodingProjects() {
                 <div className="flex flex-grow flex-col justify-between items-center text-center py-8">
                     <a href={link} target="_blank" rel="noreferrer">
                         <h4 className="text-center text-2xl font-medium">{title}</h4>
-                        {/* <h5 className="mb-3">{subtitle}</h5> */}
                     </a>
                     <p className="mt-4 mb-2">{description}</p>
                     <p className="text-sm text-gray-600">{technologies}</p>

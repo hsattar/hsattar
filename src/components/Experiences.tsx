@@ -42,4 +42,4 @@ const experiences: IExperience[] = [{
     title: "WHSmith",
     description: "Team Leader At Manchester Airport.",
     type: "work"
-  }]
+}]

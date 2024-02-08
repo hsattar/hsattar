@@ -5,7 +5,7 @@ export default function CodingProjects() {
         { codingProjects.map(({ title, description, technologies, link, image, direction }, index) => (
             <section key={index} className={`flex flex-col items-center ${direction} p-4 select-none`}>
                 <a href={link} target="_blank" rel="noreferrer" className="flex justify-center items-center w-full md:w-[50%]">
-                    <img src={image} className="w-full px-3 lg:w-[75%]" alt=""/>
+                    <img src={image} className="w-full px-3 lg:w-[75%]" alt={title} />
                 </a>
                 <div className="flex flex-grow flex-col justify-between items-center text-center py-8">
                     <a href={link} target="_blank" rel="noreferrer">

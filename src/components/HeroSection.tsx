@@ -12,7 +12,7 @@ export default function HeroSection() {
     
           <div className="flex-grow flex flex-col items-center justify-center">
               <h1 className="text-7xl p-4 font-semibold text-center gradient-text">Hasan Sattar</h1>
-              <p className="text-3xl my-4 text-center">Full Stack Developer</p>
+              <p className="text-3xl mt-4 mb-6 text-center">Full Stack Developer</p>
               <div className="text-4xl mb-8 lg:mb-0">
                   <a className="mx-3" href="https://github.com/hsattar" target="_blank" rel="noreferrer"><GitHubIcon fontSize="large" /></a>
                   <a className="mx-3" href="https://www.linkedin.com/in/hasanrsattar/" target="_blank" rel="noreferrer"><LinkedInIcon fontSize="large" /></a>
@@ -20,7 +20,7 @@ export default function HeroSection() {
           </div>
 
           <div className="md:w-[35vw] flex justify-center">
-              <img className="h-[50vh] rounded-lg" src="/assets/hasan.jpg" alt="Hasan Sattar" />
+              <img className="h-[45vh] rounded-lg" src="/assets/hasan.jpg" alt="Hasan Sattar" />
           </div>
 
     </section>

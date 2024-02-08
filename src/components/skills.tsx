@@ -122,3 +122,16 @@ const fadeInAnimationVariants = {
         }
     })
 }
+
+// bg-orange-500
+// shadow-orange-500/50
+// bg-purple-600
+// shadow-purple-600/50
+// bg-yellow-400
+// shadow-yellow-400/50
+// bg-blue-500
+// shadow-blue-500/50
+// bg-green-600
+// shadow-green-600/50
+// bg-gray-900
+// shadow-gray-900/50

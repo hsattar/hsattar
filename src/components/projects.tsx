@@ -37,3 +37,6 @@ const codingProjects: ICodingProjects[] = [{
     technologies: "React, Redux, Tailwind CSS, Node.js, Express, MongoDB, TypeScript",
     direction: "md:flex-row-reverse"
 }]
+
+// md:flex-row
+// md:flex-row-reverse

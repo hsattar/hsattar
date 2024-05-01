@@ -1,15 +1,15 @@
-import HeroSection from "@/components/HeroSection"
-import Skills from "@/components/skills"
-import CodingProjects from "@/components/projects"
-import Experiences from "@/components/Experiences"
+import HeroSection from '@/components/HeroSection'
+import Experiences from '@/components/Experiences'
+import Skills from '@/components/Skills'
+import CodingProjects from '@/components/Projects'
 
 export default function Home() {
   return (
     <>
-    <HeroSection />
-    <Skills />
-    <CodingProjects />
-    <Experiences />
+      <HeroSection />
+      <Skills />
+      <CodingProjects />
+      <Experiences />
     </>
   )
 }

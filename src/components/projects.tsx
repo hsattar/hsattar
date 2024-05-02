@@ -1,6 +1,6 @@
-export default function CodingProjects() {
+export default function Projects() {
   return (
-    <section>
+    <section className="min-h-screen">
       <h2 className="text-center text-4xl mt-20 mb-12 select-none">Coding Projects</h2>
       {codingProjects.map(({ title, description, technologies, link, image, direction }, index) => (
         <li key={index} className={`flex flex-col items-center ${direction} p-4 select-none`}>

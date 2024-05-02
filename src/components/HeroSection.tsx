@@ -67,11 +67,6 @@ export default function HeroSection() {
             <SiVercel size={75} />
             <SiAmazonaws size={75} color="#ff9d13" />
           </motion.div>
-          {/* <div className='flex mt-16'>
-          <a className=''>Tech Stack</a>
-          <a>Projects</a>
-          <a>Experience</a>
-        </div> */}
         </div>
       </section>
     </>

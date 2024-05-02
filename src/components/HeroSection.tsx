@@ -11,12 +11,19 @@ export default function HeroSection() {
     <section className="flex flex-col lg:flex-row items-center my-4 select-none min-h-screen">
       <div className="flex-grow flex flex-col items-center justify-center">
         <motion.div
+            variants={slideDownAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
+          <p className="text-5xl p-4 text-center">Hasan Sattar</p>
+        </motion.div>
+        <motion.div
           variants={slideUpAnimationVariants}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
         >
-          <p className="text-5xl p-4 text-center">Hasan Sattar</p>
           <h1 className="text-8xl mt-4 mb-6 font-semibold text-center gradient-text">Full Stack Developer</h1>
         </motion.div>
         <div className="flex text-4xl my-8 lg:mb-0">
@@ -57,12 +64,12 @@ export default function HeroSection() {
           <SiBootstrap size={75} />
           <SiTailwindcss size={75} />
           <SiFramer size={75} />
+          <SiPython size={75} />
           <SiJavascript size={75} />
           <SiTypescript size={75} />
           <SiReact size={75} />
           <SiRedux size={75} />
           <SiNextdotjs size={75} />
-          <SiPython size={75} />
           <SiNodedotjs size={75} />
           <SiExpress size={75} />
           <SiMongodb size={75} />
@@ -80,6 +87,20 @@ export default function HeroSection() {
     </section>
     </>
   )
+}
+
+const slideDownAnimationVariants = {
+  initial: {
+      opacity: 0,
+      y: -100
+  },
+  animate: () => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+          type: 'spring'
+      }
+  })
 }
 
 const slideUpAnimationVariants = {

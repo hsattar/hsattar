@@ -1,8 +1,12 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 export default function Experiences() {
   return (
-    <div className="select-none">
-      <h2 className="text-center text-4xl mb-8 mt-16">Experiences</h2>
+    <motion.div variants={slideUpAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className="select-none min-h-screen flex flex-col">
       <section className="flex flex-col items-center">
+        <h2 className="text-center text-4xl mb-8 mt-16">Experiences</h2>
         {experiences.map(({ title, description, type, year }, index) => (
           <div key={index} className={`flex items-center w-[90vw] lg:w-[75vw] my-4 rounded-md text-center border-[3px] ${type === 'education' ? 'border-green-300' : 'border-blue-500'}`}>
             <div
@@ -18,8 +22,23 @@ export default function Experiences() {
           </div>
         ))}
       </section>
-    </div>
+    </motion.div>
   )
+}
+
+const slideUpAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: () => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      delay: 0.25
+    },
+  }),
 }
 
 const experiences: IExperience[] = [

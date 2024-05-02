@@ -4,28 +4,43 @@ import { motion } from 'framer-motion'
 
 export default function CodingProjects() {
   return (
-    <section className="min-h-screen">
-      <motion.div variants={slideDownAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
+    <section className="flex flex-col min-h-screen">
+      <motion.div variants={slideUpAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
         <h2 className="text-center text-4xl mt-20 mb-12 select-none">Coding Projects</h2>
-      </motion.div>
-      <motion.div variants={slideUpAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className="grid grid-cols-2 gap-4">
-      {codingProjects.map(({ title, description, technologies, link, image }, index) => (
-        <li key={index} className={`flex flex-col items-center p-2 select-none`}>
-          <a href={link} target="_blank" rel="noreferrer" className="flex justify-center items-center w-full md:w-[75%]">
-            <img src={image} className="w-full" alt={title} />
-          </a>
-          <div className="flex flex-grow flex-col justify-between items-center text-center py-8">
-            <a href={link} target="_blank" rel="noreferrer">
-              <h4 className="text-center text-3xl font-medium">{title}</h4>
+        <div className="grid grid-cols-2 gap-4">
+        {codingProjects.map(({ title, description, technologies, link, image }, index) => (
+          <li key={index} className={`flex flex-col items-center p-2 select-none`}>
+            <a href={link} target="_blank" rel="noreferrer" className="flex justify-center items-center w-full md:w-[75%]">
+              <img src={image} className="w-full" alt={title} />
             </a>
-            <p className="mt-4 mb-2 text-xl">{description}</p>
-            <p className="text-md text-gray-300">{technologies}</p>
-          </div>
-        </li>
-      ))}
+            <div className="flex flex-grow flex-col justify-between items-center text-center py-8">
+              <a href={link} target="_blank" rel="noreferrer">
+                <h4 className="text-center text-3xl font-medium">{title}</h4>
+              </a>
+              <p className="mt-4 mb-2 text-xl">{description}</p>
+              <p className="text-md text-gray-300">{technologies}</p>
+            </div>
+          </li>
+        ))}
+        </div>
       </motion.div>
     </section>
   )
+}
+
+const slideUpAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: () => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      delay: 0.25
+    },
+  }),
 }
 
 const codingProjects: ICodingProjects[] = [
@@ -46,31 +61,3 @@ const codingProjects: ICodingProjects[] = [
     technologies: 'React, Redux, Tailwind CSS, Node.js, Express, MongoDB, TypeScript'
   }
 ]
-
-const slideDownAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: -100,
-  },
-  animate: () => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: 'spring',
-    },
-  }),
-}
-
-const slideUpAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: () => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: 'spring',
-    },
-  }),
-}

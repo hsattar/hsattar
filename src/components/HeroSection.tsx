@@ -30,10 +30,10 @@ export default function HeroSection() {
       <section className="flex flex-col lg:flex-row items-center my-4 select-none min-h-screen">
         <div className="flex-grow flex flex-col items-center justify-center">
           <motion.div variants={slideDownAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
-            <p className="text-5xl p-4 text-center">Hasan Sattar</p>
+            <p className="text-3xl md:text-5xl p-4 text-center">Hasan Sattar</p>
           </motion.div>
           <motion.div variants={slideUpAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
-            <h1 className="text-8xl mt-4 mb-6 font-semibold text-center gradient-text">Full Stack Developer</h1>
+            <h1 className="text-6xl md:text-8xl mt-4 mb-6 font-semibold text-center gradient-text">Full Stack Developer</h1>
           </motion.div>
           <div className="flex text-4xl my-8 lg:mb-0">
             <motion.div variants={bounceInAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} custom={2} className="mx-3">
@@ -47,7 +47,15 @@ export default function HeroSection() {
               </a>
             </motion.div>
           </div>
-          <motion.div variants={fadeInAnimationVariants} initial="hidden" animate="visible" exit="remove" whileInView="animate" viewport={{ once: true }} className="grid grid-cols-6 gap-16 mt-20">
+          <motion.div
+            variants={fadeInAnimationVariants}
+            initial="hidden"
+            animate="visible"
+            exit="remove"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-12 sm:gap-16 mt-20"
+          >
             <SiHtml5 size={75} color="#ea7331" />
             <SiCss3 size={75} color="#2466f1" />
             <SiBootstrap size={75} color="#8119f4" />
@@ -76,7 +84,7 @@ export default function HeroSection() {
 const slideDownAnimationVariants = {
   initial: {
     opacity: 0,
-    y: -100,
+    y: -75,
   },
   animate: () => ({
     opacity: 1,
@@ -90,7 +98,7 @@ const slideDownAnimationVariants = {
 const slideUpAnimationVariants = {
   initial: {
     opacity: 0,
-    y: 100,
+    y: 75,
   },
   animate: () => ({
     opacity: 1,

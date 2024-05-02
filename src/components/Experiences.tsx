@@ -36,7 +36,7 @@ const slideUpAnimationVariants = {
     y: 0,
     transition: {
       type: 'spring',
-      delay: 0.25
+      delay: 0.25,
     },
   }),
 }

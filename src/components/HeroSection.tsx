@@ -27,7 +27,7 @@ import {
 export default function HeroSection() {
   return (
     <>
-      <section className="flex flex-col lg:flex-row items-center my-4 select-none min-h-screen">
+      <section className="flex flex-col lg:flex-row items-center my-4 select-none">
         <div className="flex-grow flex flex-col items-center justify-center">
           <motion.div variants={slideDownAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
             <p className="text-5xl p-4 text-center">Hasan Sattar</p>

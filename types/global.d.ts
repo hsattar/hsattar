@@ -18,7 +18,6 @@ interface ICodingProjects {
   subtitle: string
   description: string
   technologies: string
-  direction: string
 }
 
 interface IClass {

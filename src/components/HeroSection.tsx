@@ -29,21 +29,21 @@ export default function HeroSection() {
     <>
       <section className="flex flex-col lg:flex-row items-center my-4 select-none min-h-screen">
         <div className="flex-grow flex flex-col items-center justify-center">
-          <motion.div variants={slideDownAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
-            <p className="text-3xl md:text-5xl p-4 text-center">Hasan Sattar</p>
-          </motion.div>
-          <motion.div variants={slideUpAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
-            <h1 className="text-6xl md:text-8xl mt-4 mb-6 font-semibold text-center gradient-text">Full Stack Developer</h1>
-          </motion.div>
+          <motion.h2 variants={slideDownAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className="text-3xl md:text-5xl p-4 text-center">
+            Hasan Sattar
+          </motion.h2>
+          <motion.h1 variants={slideUpAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className="text-6xl md:text-8xl mt-4 mb-6 font-semibold text-center gradient-text">
+            Full Stack Developer
+          </motion.h1>
           <div className="flex text-4xl my-8 lg:mb-0">
             <motion.div variants={bounceInAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} custom={2} className="mx-3">
               <a href="https://github.com/hsattar" target="_blank" rel="noreferrer">
-                <SiGithub size={50} />
+                <img src="https://skillicons.dev/icons?i=github" alt="GitHub Icon" className='hover:scale-125' />
               </a>
             </motion.div>
             <motion.div variants={bounceInAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} custom={3} className="mx-3">
               <a href="https://www.linkedin.com/in/hasanrsattar/" target="_blank" rel="noreferrer">
-                <SiLinkedin size={50} />
+                <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn Icon" className='hover:scale-125' />
               </a>
             </motion.div>
           </div>

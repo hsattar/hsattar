@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
+    <>
     <html lang="en">
       <link rel="icon" href="/favicon.png" />
       <meta property="og:title" content="Hasan Sattar" />
@@ -17,5 +19,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <meta property="og:type" content="website" />
       <body>{children}</body>
     </html>
+    <Analytics />
+    </>
   )
 }

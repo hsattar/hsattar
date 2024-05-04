@@ -23,6 +23,7 @@ import {
   SiTypescript,
   SiVercel,
 } from 'react-icons/si'
+import { TbBrandFramerMotion } from 'react-icons/tb'
 
 export default function HeroSection() {
   return (
@@ -55,14 +56,13 @@ export default function HeroSection() {
             whileInView="animate"
             viewport={{ once: true }}
             className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-12 sm:gap-16 mt-20"
-            // className="mt-20"
           >
             {/* <img src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,python,javascript,typescript,react,redux,nextjs,nodejs,express,mongodb,postgres,jest,vercel,aws&perline=6" /> */}
             <SiHtml5 size={75} color="#ea7331" />
             <SiCss3 size={75} color="#2466f1" />
             <SiBootstrap size={75} color="#8119f4" />
             <SiTailwindcss size={75} color="#3abdf6" />
-            <SiFramer size={75} color="#000" />
+            <TbBrandFramerMotion size={75} color='#691eff' />
             <SiPython size={75} color="#3d76a7" />
             <SiJavascript size={75} color="#f6e028" />
             <SiTypescript size={75} color="#127ecd" />

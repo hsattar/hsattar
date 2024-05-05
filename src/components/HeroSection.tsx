@@ -24,12 +24,14 @@ import {
   SiVercel,
 } from 'react-icons/si'
 import { TbBrandFramerMotion } from 'react-icons/tb'
+import { BackgroundBeams } from './BackgroundBeams'
 
 export default function HeroSection() {
   return (
     <>
       <section className="flex flex-col lg:flex-row items-center my-4 select-none min-h-screen">
-        <div className="flex-grow flex flex-col items-center justify-center">
+        <BackgroundBeams />
+        <div className="flex-grow flex flex-col items-center justify-center z-20">
           <motion.h2 variants={slideDownAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className="text-3xl md:text-5xl p-4 text-center">
             Hasan Sattar
           </motion.h2>

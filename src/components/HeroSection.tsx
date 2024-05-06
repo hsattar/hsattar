@@ -6,12 +6,9 @@ import {
   SiBootstrap,
   SiCss3,
   SiExpress,
-  SiFramer,
-  SiGithub,
   SiHtml5,
   SiJavascript,
   SiJest,
-  SiLinkedin,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
@@ -24,15 +21,14 @@ import {
   SiVercel,
 } from 'react-icons/si'
 import { TbBrandFramerMotion } from 'react-icons/tb'
-import { BackgroundBeams } from './BackgroundBeams'
 
 export default function HeroSection() {
   return (
-    <>
+    <div className="min-h-screen w-full bg-dot-white/[0.2] relative flex items-center justify-center">
+      <div className="absolute bg-[#181818] pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <section className="flex flex-col lg:flex-row items-center my-4 select-none min-h-screen">
-        <BackgroundBeams />
         <div className="flex-grow flex flex-col items-center justify-center z-20">
-          <motion.h2 variants={slideDownAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className="text-3xl md:text-5xl p-4 text-center">
+          <motion.h2 variants={slideDownAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 p-4 text-center">
             Hasan Sattar
           </motion.h2>
           <motion.h1 variants={slideUpAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className="text-6xl md:text-8xl mt-4 mb-6 font-semibold text-center gradient-text">
@@ -81,7 +77,7 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </section>
-    </>
+    </div>
   )
 }
 

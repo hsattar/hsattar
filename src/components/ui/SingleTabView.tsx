@@ -9,7 +9,7 @@ export const SingleTabView = ({ link, image, title, description, technologies }:
                     <h4 className="text-center text-3xl font-medium">{title}</h4>
                 </a>
                 <p className="mt-4 mb-6 text-xl">{description}</p>
-                <img src={technologies} />
+                <img src={technologies} alt="Project Tech Stack" />
             </div>
         </div>
     )

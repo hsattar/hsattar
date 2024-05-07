@@ -10,16 +10,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <>
-    <html lang="en">
-      <link rel="icon" href="/favicon.png" />
-      <meta property="og:title" content="Hasan Sattar" />
-      <meta property="og:description" content="A Personal Portfolio website for Hasan Sattar" />
-      <meta property="og:image" content="/favicon.png" />
-      <meta property="og:url" content="https://hasansattar.co.uk/" />
-      <meta property="og:type" content="website" />
-      <body>{children}</body>
-    </html>
-    <Analytics />
+      <html lang="en">
+        <link rel="icon" href="/favicon.png" />
+        <meta property="og:title" content="Hasan Sattar" />
+        <meta property="og:description" content="A Personal Portfolio website for Hasan Sattar" />
+        <meta property="og:image" content="/favicon.png" />
+        <meta property="og:url" content="https://hasansattar.co.uk/" />
+        <meta property="og:type" content="website" />
+        <body>{children}</body>
+      </html>
+      <Analytics />
     </>
   )
 }

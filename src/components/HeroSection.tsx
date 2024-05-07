@@ -73,93 +73,111 @@ export default function HeroSection() {
               items={[
                 {
                   id: 0,
-                  icon: <SiHtml5 size={75} color="#ea7331" />,
                   name: 'HTML',
+                  icon: <SiHtml5 size={75} color="#ea7331" />,
+                  color: 'via-orange-500'
                 },
                 {
                   id: 1,
-                  icon: <SiCss3 size={75} color="#2466f1" />,
                   name: 'CSS',
+                  icon: <SiCss3 size={75} color="#2466f1" />,
+                  color: 'via-blue-500'
                 },
                 {
                   id: 2,
-                  icon: <SiBootstrap size={75} color="#8119f4" />,
                   name: 'Bootstrap',
+                  icon: <SiBootstrap size={75} color="#8119f4" />,
+                  color: 'via-purple-500'
                 },
                 {
                   id: 3,
-                  icon: <SiTailwindcss size={75} color="#3abdf6" />,
                   name: 'Tailwind CSS',
+                  icon: <SiTailwindcss size={75} color="#3abdf6" />,
+                  color: 'via-blue-400'
                 },
                 {
                   id: 4,
-                  icon: <TbBrandFramerMotion size={75} color="#691eff" />,
                   name: 'Framer Motion',
+                  icon: <TbBrandFramerMotion size={75} color="#691eff" />,
+                  color: 'via-purple-500'
                 },
                 {
                   id: 5,
-                  icon: <SiPython size={75} color="#3d76a7" />,
                   name: 'Python',
+                  icon: <SiPython size={75} color="#3d76a7" />,
+                  color: 'via-sky-700'
                 },
                 {
                   id: 6,
-                  icon: <SiJavascript size={75} color="#f6e028" />,
                   name: 'Javascript',
+                  icon: <SiJavascript size={75} color="#f6e028" />,
+                  color: 'via-yellow-500'
                 },
                 {
                   id: 7,
-                  icon: <SiTypescript size={75} color="#127ecd" />,
                   name: 'Typescript',
+                  icon: <SiTypescript size={75} color="#127ecd" />,
+                  color: 'via-blue-500'
                 },
                 {
                   id: 8,
-                  icon: <SiReact size={75} color="#67dbfa" />,
                   name: 'React',
+                  icon: <SiReact size={75} color="#67dbfa" />,
+                  color: 'via-blue-400'
                 },
                 {
                   id: 9,
-                  icon: <SiRedux size={75} color="#7b50bd" />,
                   name: 'Redux',
+                  icon: <SiRedux size={75} color="#7b50bd" />,
+                  color: 'via-purple-500'
                 },
                 {
                   id: 10,
-                  icon: <SiNextdotjs size={75} />,
                   name: 'Next.js',
+                  icon: <SiNextdotjs size={75} />,
+                  color: 'via-white'
                 },
                 {
                   id: 11,
-                  icon: <SiNodedotjs size={75} color="#78b95b" />,
                   name: 'Node.js',
+                  icon: <SiNodedotjs size={75} color="#78b95b" />,
+                  color: 'via-green-500'
                 },
                 {
                   id: 12,
-                  icon: <SiExpress size={75} />,
                   name: 'Express',
+                  icon: <SiExpress size={75} />,
+                  color: 'via-white'
                 },
                 {
                   id: 13,
-                  icon: <SiMongodb size={75} color="#15ad55" />,
                   name: 'MongoDB',
+                  icon: <SiMongodb size={75} color="#15ad55" />,
+                  color: 'via-green-600'
                 },
                 {
                   id: 14,
-                  icon: <SiPostgresql size={75} color="#396c95" />,
                   name: 'Postgresql',
+                  icon: <SiPostgresql size={75} color="#396c95" />,
+                  color: 'via-sky-700'
                 },
                 {
                   id: 15,
-                  icon: <SiJest size={75} color="#c8441f" />,
                   name: 'Jest',
+                  icon: <SiJest size={75} color="#c8441f" />,
+                  color: 'via-orange-600'
                 },
                 {
                   id: 16,
-                  icon: <SiVercel size={75} />,
                   name: 'Vercel',
+                  icon: <SiVercel size={75} />,
+                  color: 'via-white'
                 },
                 {
                   id: 17,
-                  icon: <SiAmazonaws size={75} color="#ff9d13" />,
                   name: 'AWS',
+                  icon: <SiAmazonaws size={75} color="#ff9d13" />,
+                  color: 'via-orange-400'
                 },
               ]}
             />

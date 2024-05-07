@@ -12,9 +12,10 @@ interface IExperience {
 }
 
 interface ICodingProjects {
+  title: string
+  value: string
   image: string
   link: string
-  title: string
   subtitle: string
   description: string
   technologies: string

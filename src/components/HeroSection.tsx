@@ -66,138 +66,237 @@ export default function HeroSection() {
             exit="remove"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-12 sm:gap-16 mt-20"
+            className="mt-20"
           >
-            <AnimatedTooltip
-              items={[
-                {
-                  id: 0,
-                  name: 'HTML',
-                  icon: <SiHtml5 size={75} color="#ea7331" />,
-                  color: 'via-orange-500'
-                },
-                {
-                  id: 1,
-                  name: 'CSS',
-                  icon: <SiCss3 size={75} color="#2466f1" />,
-                  color: 'via-blue-500'
-                },
-                {
-                  id: 2,
-                  name: 'Bootstrap',
-                  icon: <SiBootstrap size={75} color="#8119f4" />,
-                  color: 'via-purple-500'
-                },
-                {
-                  id: 3,
-                  name: 'Tailwind CSS',
-                  icon: <SiTailwindcss size={75} color="#3abdf6" />,
-                  color: 'via-blue-400'
-                },
-                {
-                  id: 4,
-                  name: 'Framer Motion',
-                  icon: <TbBrandFramerMotion size={75} color="#691eff" />,
-                  color: 'via-purple-500'
-                },
-                {
-                  id: 5,
-                  name: 'Python',
-                  icon: <SiPython size={75} color="#3d76a7" />,
-                  color: 'via-sky-700'
-                },
-                {
-                  id: 6,
-                  name: 'Javascript',
-                  icon: <SiJavascript size={75} color="#f6e028" />,
-                  color: 'via-yellow-500'
-                },
-                {
-                  id: 7,
-                  name: 'Typescript',
-                  icon: <SiTypescript size={75} color="#127ecd" />,
-                  color: 'via-blue-500'
-                },
-                {
-                  id: 8,
-                  name: 'React',
-                  icon: <SiReact size={75} color="#67dbfa" />,
-                  color: 'via-blue-400'
-                },
-                {
-                  id: 9,
-                  name: 'Redux',
-                  icon: <SiRedux size={75} color="#7b50bd" />,
-                  color: 'via-purple-500'
-                },
-                {
-                  id: 10,
-                  name: 'Next.js',
-                  icon: <SiNextdotjs size={75} />,
-                  color: 'via-white'
-                },
-                {
-                  id: 11,
-                  name: 'Node.js',
-                  icon: <SiNodedotjs size={75} color="#78b95b" />,
-                  color: 'via-green-500'
-                },
-                {
-                  id: 12,
-                  name: 'Express',
-                  icon: <SiExpress size={75} />,
-                  color: 'via-white'
-                },
-                {
-                  id: 13,
-                  name: 'MongoDB',
-                  icon: <SiMongodb size={75} color="#15ad55" />,
-                  color: 'via-green-600'
-                },
-                {
-                  id: 14,
-                  name: 'Postgresql',
-                  icon: <SiPostgresql size={75} color="#396c95" />,
-                  color: 'via-sky-700'
-                },
-                {
-                  id: 15,
-                  name: 'Jest',
-                  icon: <SiJest size={75} color="#c8441f" />,
-                  color: 'via-orange-600'
-                },
-                {
-                  id: 16,
-                  name: 'Vercel',
-                  icon: <SiVercel size={75} />,
-                  color: 'via-white'
-                },
-                {
-                  id: 17,
-                  name: 'AWS',
-                  icon: <SiAmazonaws size={75} color="#ff9d13" />,
-                  color: 'via-orange-400'
-                },
-              ]}
-            />
-            {/* <SiHtml5 size={75} color="#ea7331" />
-            <SiCss3 size={75} color="#2466f1" />
-            <SiBootstrap size={75} color="#8119f4" />
-            <SiTailwindcss size={75} color="#3abdf6" />
-            <TbBrandFramerMotion size={75} color='#691eff' />
-            <SiPython size={75} color="#3d76a7" />
-            <SiJavascript size={75} color="#f6e028" />
-            <SiTypescript size={75} color="#127ecd" />
-            <SiReact size={75} color="#67dbfa" />
-            <SiRedux size={75} color="#7b50bd" />
-            <SiNextdotjs size={75} />
-            <SiNodedotjs size={75} color="#78b95b" />
-            <SiExpress size={75} />
-            <SiMongodb size={75} color="#15ad55" />
-            <SiPostgresql size={75} color="#396c95" />
-            <SiJest size={75} color="#c8441f" />
-            <SiVercel size={75} />
-            <SiAmazonaws size={75} color="#ff9d13" /> */}
+            <div className='hidden md:grid md:grid-cols-6 md:gap-16'>
+              <AnimatedTooltip
+                items={[
+                  {
+                    id: 0,
+                    name: 'HTML',
+                    icon: <SiHtml5 size={75} color="#ea7331" />,
+                    color: 'via-orange-500'
+                  },
+                  {
+                    id: 1,
+                    name: 'CSS',
+                    icon: <SiCss3 size={75} color="#2466f1" />,
+                    color: 'via-blue-500'
+                  },
+                  {
+                    id: 2,
+                    name: 'Bootstrap',
+                    icon: <SiBootstrap size={75} color="#8119f4" />,
+                    color: 'via-purple-500'
+                  },
+                  {
+                    id: 3,
+                    name: 'Tailwind CSS',
+                    icon: <SiTailwindcss size={75} color="#3abdf6" />,
+                    color: 'via-blue-400'
+                  },
+                  {
+                    id: 4,
+                    name: 'Framer Motion',
+                    icon: <TbBrandFramerMotion size={75} color="#691eff" />,
+                    color: 'via-indigo-600'
+                  },
+                  {
+                    id: 5,
+                    name: 'Python',
+                    icon: <SiPython size={75} color="#3d76a7" />,
+                    color: 'via-sky-700'
+                  },
+                  {
+                    id: 6,
+                    name: 'Javascript',
+                    icon: <SiJavascript size={75} color="#f6e028" />,
+                    color: 'via-yellow-500'
+                  },
+                  {
+                    id: 7,
+                    name: 'Typescript',
+                    icon: <SiTypescript size={75} color="#127ecd" />,
+                    color: 'via-blue-500'
+                  },
+                  {
+                    id: 8,
+                    name: 'React',
+                    icon: <SiReact size={75} color="#67dbfa" />,
+                    color: 'via-blue-400'
+                  },
+                  {
+                    id: 9,
+                    name: 'Redux',
+                    icon: <SiRedux size={75} color="#7b50bd" />,
+                    color: 'via-purple-500'
+                  },
+                  {
+                    id: 10,
+                    name: 'Next.js',
+                    icon: <SiNextdotjs size={75} />,
+                    color: 'via-white'
+                  },
+                  {
+                    id: 11,
+                    name: 'Node.js',
+                    icon: <SiNodedotjs size={75} color="#78b95b" />,
+                    color: 'via-green-500'
+                  },
+                  {
+                    id: 12,
+                    name: 'Express',
+                    icon: <SiExpress size={75} />,
+                    color: 'via-white'
+                  },
+                  {
+                    id: 13,
+                    name: 'MongoDB',
+                    icon: <SiMongodb size={75} color="#15ad55" />,
+                    color: 'via-green-600'
+                  },
+                  {
+                    id: 14,
+                    name: 'Postgresql',
+                    icon: <SiPostgresql size={75} color="#396c95" />,
+                    color: 'via-sky-700'
+                  },
+                  {
+                    id: 15,
+                    name: 'Jest',
+                    icon: <SiJest size={75} color="#c8441f" />,
+                    color: 'via-orange-600'
+                  },
+                  {
+                    id: 16,
+                    name: 'Vercel',
+                    icon: <SiVercel size={75} />,
+                    color: 'via-white'
+                  },
+                  {
+                    id: 17,
+                    name: 'AWS',
+                    icon: <SiAmazonaws size={75} color="#ff9d13" />,
+                    color: 'via-orange-400'
+                  },
+                ]}
+              />
+            </div>
+
+            <div className='grid grid-cols-3 sm:grid-cols-4 gap-12 sm:gap-16 md:hidden'>
+              <AnimatedTooltip
+                items={[
+                  {
+                    id: 0,
+                    name: 'HTML',
+                    icon: <SiHtml5 size={60} color="#ea7331" />,
+                    color: 'via-orange-500'
+                  },
+                  {
+                    id: 1,
+                    name: 'CSS',
+                    icon: <SiCss3 size={60} color="#2466f1" />,
+                    color: 'via-blue-500'
+                  },
+                  {
+                    id: 2,
+                    name: 'Bootstrap',
+                    icon: <SiBootstrap size={60} color="#8119f4" />,
+                    color: 'via-purple-500'
+                  },
+                  {
+                    id: 3,
+                    name: 'Tailwind CSS',
+                    icon: <SiTailwindcss size={60} color="#3abdf6" />,
+                    color: 'via-blue-400'
+                  },
+                  {
+                    id: 4,
+                    name: 'Framer Motion',
+                    icon: <TbBrandFramerMotion size={60} color="#691eff" />,
+                    color: 'via-indigo-600'
+                  },
+                  {
+                    id: 5,
+                    name: 'Python',
+                    icon: <SiPython size={60} color="#3d76a7" />,
+                    color: 'via-sky-700'
+                  },
+                  {
+                    id: 6,
+                    name: 'Javascript',
+                    icon: <SiJavascript size={60} color="#f6e028" />,
+                    color: 'via-yellow-500'
+                  },
+                  {
+                    id: 7,
+                    name: 'Typescript',
+                    icon: <SiTypescript size={60} color="#127ecd" />,
+                    color: 'via-blue-500'
+                  },
+                  {
+                    id: 8,
+                    name: 'React',
+                    icon: <SiReact size={60} color="#67dbfa" />,
+                    color: 'via-blue-400'
+                  },
+                  {
+                    id: 9,
+                    name: 'Redux',
+                    icon: <SiRedux size={60} color="#7b50bd" />,
+                    color: 'via-purple-500'
+                  },
+                  {
+                    id: 10,
+                    name: 'Next.js',
+                    icon: <SiNextdotjs size={60} />,
+                    color: 'via-white'
+                  },
+                  {
+                    id: 11,
+                    name: 'Node.js',
+                    icon: <SiNodedotjs size={60} color="#78b95b" />,
+                    color: 'via-green-500'
+                  },
+                  {
+                    id: 12,
+                    name: 'Express',
+                    icon: <SiExpress size={60} />,
+                    color: 'via-white'
+                  },
+                  {
+                    id: 13,
+                    name: 'MongoDB',
+                    icon: <SiMongodb size={60} color="#15ad55" />,
+                    color: 'via-green-600'
+                  },
+                  {
+                    id: 14,
+                    name: 'Postgresql',
+                    icon: <SiPostgresql size={60} color="#396c95" />,
+                    color: 'via-sky-700'
+                  },
+                  {
+                    id: 15,
+                    name: 'Jest',
+                    icon: <SiJest size={60} color="#c8441f" />,
+                    color: 'via-orange-600'
+                  },
+                  {
+                    id: 16,
+                    name: 'Vercel',
+                    icon: <SiVercel size={60} />,
+                    color: 'via-white'
+                  },
+                  {
+                    id: 17,
+                    name: 'AWS',
+                    icon: <SiAmazonaws size={60} color="#ff9d13" />,
+                    color: 'via-orange-400'
+                  },
+                ]}
+              />
+            </div>
           </motion.div>
         </div>
       </section>

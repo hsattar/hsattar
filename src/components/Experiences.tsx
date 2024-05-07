@@ -30,9 +30,9 @@ export default function Experiences() {
             </div>
           </div>
         ))} */}
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 w-full mt-12 mb-32 justify-center items-center'>
-          { experiences.map(({ title, description, type, year }, index) => (
-            <div key={index} className={(experiences.length % 2 !== 0 && index === (experiences.length - 1)) ? 'col-span-2 w-[50%] text-center border-2 border-gray-800 py-8 px-4 rounded-xl place-self-center' : 'w-[75%] text-center border-2 border-gray-800 py-8 px-4 rounded-xl place-self-center'}>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-x-8 md:gap-y-16 w-full mt-12 mb-32'>
+          { experiences.map(({ title, description, year }, index) => (
+            <div key={index} className={(experiences.length % 2 !== 0 && index === (experiences.length - 1)) ? 'md:col-span-2 w-[95%] md:w-[75%] lg:w-[50%] text-center border-2 border-gray-800 py-8 px-4 rounded-xl place-self-center' : 'w-[95%] md:w-[90%] lg:w-[75%] text-center border-2 border-gray-800 py-8 px-4 rounded-xl place-self-center'}>
               <h4 className='text-3xl mb-3 font-semibold'>{title}</h4>
               <p className='text-muted text-gray-400 text-sm mb-6'>{year}</p>
               <p className='text-xl'>{description}</p>

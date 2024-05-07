@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function Experiences() {
   return (
-    <motion.div variants={slideUpAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className="select-none min-h-screen flex flex-col">
+    <motion.div variants={slideUpAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className="select-none flex flex-col">
       <section className="flex flex-col items-center">
         <h2 className="text-center text-4xl mb-8 mt-16">Experiences</h2>
         {experiences.map(({ title, description, type, year }, index) => (

@@ -68,7 +68,6 @@ export default function HeroSection() {
             viewport={{ once: true }}
             className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-12 sm:gap-16 mt-20"
           >
-            {/* <img src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,python,javascript,typescript,react,redux,nextjs,nodejs,express,mongodb,postgres,jest,vercel,aws&perline=6" /> */}
             <AnimatedTooltip
               items={[
                 {

@@ -73,7 +73,7 @@ export const FadeInDiv = ({ className, tabs, hovering }: { className?: string; k
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
-          className={cn('w-full h-full', className)}
+          className={cn('w-full h-full absolute', className)}
         >
           { isActive(tab) && tab.content }
         </motion.div>

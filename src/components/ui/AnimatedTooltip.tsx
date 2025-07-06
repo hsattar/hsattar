@@ -14,10 +14,10 @@ export const AnimatedTooltip = ({ items }: IProps) => {
 
   return (
     <>
-      {items.map((item, idx) => (
-        <div className="-mr-4 relative group" key={item.id} onMouseEnter={() => setHoveredIndex(item.id)} onMouseLeave={() => setHoveredIndex(null)}>
+      {items.map((item, index) => (
+        <div className="-mr-4 relative group" key={item.name} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
           <AnimatePresence>
-            {hoveredIndex === item.id && (
+            {hoveredIndex === index && (
               <motion.div
                 initial={{ opacity: 0, y: 20, scale: 0.6 }}
                 animate={{
@@ -53,7 +53,6 @@ export const AnimatedTooltip = ({ items }: IProps) => {
 
 interface IProps {
   items: {
-    id: number
     name: string
     icon: React.JSX.Element
     color: string

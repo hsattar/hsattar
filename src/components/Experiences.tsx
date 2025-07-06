@@ -54,6 +54,18 @@ const slideUpAnimationVariants = {
 
 const experiences: IExperience[] = [
   {
+    year: 'Nov 2024 - Present',
+    title: 'HS Software Studio',
+    description: 'Freelance Software Development.',
+    type: 'work',
+  },
+  {
+    year: 'Jun 2018 - Sep 2021, Mar 2022 - June 2023, Sep 2023 - Jan 2025',
+    title: 'WHSmith',
+    description: 'Team Leader & Deputy Manager At Manchester Airport.',
+    type: 'work',
+  },
+  {
     year: 'May 2023 - Aug 2023',
     title: 'Northcoders',
     description: '3 Month Data Engineering Bootcamp.',
@@ -64,11 +76,5 @@ const experiences: IExperience[] = [
     title: 'Epicode',
     description: '6 Month Coding Bootcamp. Full Stack Development.',
     type: 'education',
-  },
-  {
-    year: 'Jun 2018 - Sep 2021, Mar 2022 - June 2023, Sep 2023 - Present',
-    title: 'WHSmith',
-    description: 'Team Leader At Manchester Airport.',
-    type: 'work',
   },
 ]

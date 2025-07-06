@@ -4,13 +4,13 @@ import { motion } from 'framer-motion'
 import { AnimatedTabs } from './ui/AnimatedTabs'
 import { SingleTabView } from './ui/SingleTabView'
 
-export default function CodingProjects() {
+export default function PersonalProjects() {
   return (
     <section className="flex flex-col min-h-[800px] lg:min-h-[850px]">
       <motion.div variants={slideUpAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
         <h2 className="text-center text-4xl mt-20 mb-16 select-none">
           <span className="relative px-2">
-            Coding Projects
+            Personal Projects
             <svg className="pointer-events-none absolute inset-x-0 -bottom-8 text-blue-500" viewBox="0 0 687 155">
               <g stroke="currentColor" strokeWidth="7" fill="none" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M20 118c27-13.3333333 54-20 81-20 40.5 0 40.5 20 81 20s40.626917-20 81-20 40.123083 20 80.5 20 40.5-20 81-20 40.5 20 81 20 40.626917-20 81-20c26.915389 0 53.748722 6.6666667 80.5 20"></path>
@@ -18,7 +18,7 @@ export default function CodingProjects() {
             </svg>
           </span>
         </h2>
-        <AnimatedTabs tabs={codingProjects.map((project) => ({ title: project.title, value: project.value, content: <SingleTabView {...project} /> }))} />
+        <AnimatedTabs tabs={personalProjects.map((project) => ({ title: project.title, value: project.value, content: <SingleTabView {...project} /> }))} />
       </motion.div>
     </section>
   )
@@ -39,7 +39,7 @@ const slideUpAnimationVariants = {
   }),
 }
 
-const codingProjects: ICodingProjects[] = [
+const personalProjects: IPersonalProjects[] = [
   {
     title: 'Smiths Air',
     value: 'smithsair',

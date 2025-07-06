@@ -11,7 +11,7 @@ interface IExperience {
   type: string
 }
 
-interface ICodingProjects {
+interface IPersonalProjects {
   title: string
   value: string
   image: string

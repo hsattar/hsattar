@@ -6,7 +6,7 @@ import { SingleTabView } from './ui/SingleTabView'
 
 export default function CodingProjects() {
   return (
-    <section className="flex flex-col min-h-screen">
+    <section className="flex flex-col min-h-[800px] lg:min-h-[850px]">
       <motion.div variants={slideUpAnimationVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
         <h2 className="text-center text-4xl mt-20 mb-16 select-none">
           <span className="relative px-2">
@@ -18,7 +18,7 @@ export default function CodingProjects() {
             </svg>
           </span>
         </h2>
-        <AnimatedTabs tabs={ codingProjects.map(project => ({ title: project.title, value: project.value, content: <SingleTabView {...project} /> })) } />
+        <AnimatedTabs tabs={codingProjects.map((project) => ({ title: project.title, value: project.value, content: <SingleTabView {...project} /> }))} />
       </motion.div>
     </section>
   )
@@ -47,7 +47,7 @@ const codingProjects: ICodingProjects[] = [
     link: 'https://youtu.be/biNf-jZZ9gk',
     subtitle: 'Solo Project',
     description: 'A workplace communication Progressive Web App. Live App with 50 Users.',
-    technologies: 'https://skillicons.dev/icons?i=nextjs,redux,tailwind,nodejs,express,mongodb,typescript,jest,vercel'
+    technologies: 'https://skillicons.dev/icons?i=nextjs,redux,tailwind,nodejs,express,mongodb,typescript,jest,vercel',
   },
   {
     title: 'Code Buddy',
@@ -56,6 +56,6 @@ const codingProjects: ICodingProjects[] = [
     link: 'https://youtu.be/gJ_Q4nzSVMs',
     subtitle: 'Solo Project',
     description: 'Code Buddy is a no-code platform that allows you to create websites using a drag and drop interface.',
-    technologies: 'https://skillicons.dev/icons?i=react,redux,tailwind,nodejs,express,mongodb,typescript'
+    technologies: 'https://skillicons.dev/icons?i=react,redux,tailwind,nodejs,express,mongodb,typescript',
   },
 ]
